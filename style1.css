@@ -4,8 +4,30 @@ body {
 }
 
 header {
-    background-color: cadetblue;
+    background-color: floralwhite;
     height: 100px;
+    display: flex;
+    text-align: center;
+    border-bottom-width: 1px;
+    border-bottom-style: dotted;
+    border-bottom-color: cadetblue;
+}
+
+#topSection1 {
+    width: 20%;
+    flex: 1;
+}
+
+#topSection2 {
+    width: 50%;
+    flex: 2;
+    font-size: 22pt;
+    color: rebeccapurple;
+}
+
+#topSection3 {
+    width: 30%;
+    text-align: center;
 }
 
 #tituloPagina {
