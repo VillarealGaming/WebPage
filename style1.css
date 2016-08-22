@@ -1,4 +1,4 @@
-/*POSIBLE TODO: Asegurar que no pasen cosas raras si algun explorador
+/*POSIBLE TODO: Asegurar que no pasen cosas raras si algún explorador
 no soporta alguna propiedad de estilo*/
 body {
     margin: 0px;
@@ -9,8 +9,6 @@ body {
     background-blend-mode: overlay;
     /*probar en otros navegaores*/
     height: 100vh;
-    /*background-color: cornflowerblue;*/
-    /*background-color: burlywood; */
 }
 
 header {
@@ -22,10 +20,11 @@ header {
     border-bottom-style: dotted;
     border-bottom-color: cadetblue;
 }
-/*Para centrar el div de login*/
+/*Para centrar verticalmente el div de login*/
 #loginTopPadding
 {
-    /*Usamos la medida vh para que este en base al viewport*/
+    /*Usamos la medida vh para que este en base al viewport,
+    tambien probar en otros navegadores*/
     height: 25vh;
 }
 #loginTable
@@ -34,10 +33,12 @@ header {
 }
 
 #loginForm {
+    /*font*/
     font-family: "lucida sans", arial;
     font-size: .84em;
     color: white;
     text-align: center;
+    /*box*/
     min-width: 600px;
     max-width: 600px;
     margin: auto;
@@ -48,7 +49,6 @@ header {
     border-width: 1px;
     background-color: rgba(67, 86, 81, .7);
     box-shadow: 0 0 8px #b8c7b8;
-    
     /*float: center;*/
     /*border-left-width: 8px;*/
     /*border-left-style: dotted;*/
