@@ -2,9 +2,10 @@
 no soporta alguna propiedad de estilo*/
 body {
     margin: 0px;
-    background: 
+    background-color: #F1FFF8;
+    /*background: 
         url("Images/loginBackground2.jpg") repeat,
-        radial-gradient(circle, gray, black);
+        radial-gradient(circle, gray, black);*/
     /*probar en otros navegaores*/
     background-blend-mode: overlay;
     /*probar en otros navegaores*/
@@ -12,13 +13,21 @@ body {
 }
 
 header {
-    background-color: floralwhite;
-    height: 100px;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#008069), to(#560B40));
+    background-image: -webkit-linear-gradient(top, #008069, #560B40);
+    background-image: -moz-linear-gradient(top, #008069, #560B40);
+    background-image: linear-gradient(to right, #008069, #560B40);
+    color: white;
+    height: 60px;
     display: flex;
     text-align: center;
     border-bottom-width: 1px;
-    border-bottom-style: dotted;
-    border-bottom-color: cadetblue;
+    border-bottom-style: solid;    
+    border-bottom-color: #23C1A7;
+    /*background-image: -webkit-gradient(linear, left top, left bottom, from(#23C1A7), to(#89206A));
+    background-image: -webkit-linear-gradient(top, #23C1A7, #89206A);
+    background-image: -moz-linear-gradient(top, #23C1A7, #89206A);
+    background-image: linear-gradient(to bottom, #23C1A7, #89206A);*/
 }
 /*Para centrar verticalmente el div de login*/
 #loginTopPadding
@@ -34,9 +43,10 @@ header {
 
 #loginForm {
     /*font*/
+    background-color: white;
     font-family: "lucida sans", arial;
     font-size: .84em;
-    color: white;
+    color: black;
     text-align: center;
     /*box*/
     min-width: 600px;
@@ -47,8 +57,8 @@ header {
     border-radius: 8px;
     /*border-style: solid;*/
     border-width: 1px;
-    background-color: rgba(67, 86, 81, .7);
-    box-shadow: 0 0 8px #b8c7b8;
+    /*background-color: rgba(67, 86, 81, .7);*/
+    box-shadow: 1px 1px 4px #008069;
     /*float: center;*/
     /*border-left-width: 8px;*/
     /*border-left-style: dotted;*/
@@ -68,7 +78,7 @@ header {
     width: 50%;
     flex: 2;
     font-size: 22pt;
-    color: rebeccapurple;
+    color: white;
 }
 
 #topSection3 {
@@ -77,7 +87,8 @@ header {
 }
 
 #tituloPagina {
-    color: floralwhite;
+    color: white;
+    color: gree
     font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
     text-align: center;
     padding-top: 20px;
