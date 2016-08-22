@@ -1,6 +1,16 @@
+/*POSIBLE TODO: Asegurar que no pasen cosas raras si algun explorador
+no soporta alguna propiedad de estilo*/
 body {
     margin: 0px;
-    background-color: whitesmoke;
+    background: 
+        url("Images/loginBackground2.jpg") repeat,
+        radial-gradient(circle, gray, black);
+    /*probar en otros navegaores*/
+    background-blend-mode: overlay;
+    /*probar en otros navegaores*/
+    height: 100vh;
+    /*background-color: cornflowerblue;*/
+    /*background-color: burlywood; */
 }
 
 header {
@@ -12,14 +22,41 @@ header {
     border-bottom-style: dotted;
     border-bottom-color: cadetblue;
 }
+/*Para centrar el div de login*/
+#loginTopPadding
+{
+    /*Usamos la medida vh para que este en base al viewport*/
+    height: 25vh;
+}
+#loginTable
+{
+    margin: auto;
+}
 
 #loginForm {
+    font-family: "lucida sans", arial;
+    font-size: .84em;
+    color: white;
     text-align: center;
-    width: 50%;
-    float: right;
-    border-left-width: 1px;
-    border-left-style: dotted;
-    border-left-color: cadetblue;
+    min-width: 600px;
+    max-width: 600px;
+    margin: auto;
+    padding: 8px;
+    border-color: #a9bca9;
+    border-radius: 8px;
+    border-style: solid;
+    border-width: 1px;
+    background-color: rgba(67, 86, 81, .7);
+    box-shadow: 0 0 8px #b8c7b8;
+    
+    /*float: center;*/
+    /*border-left-width: 8px;*/
+    /*border-left-style: dotted;*/
+    /*border-left-color: cadetblue;*/
+}
+#loginForm h1
+{
+    font-family: "century gothic", arial;
 }
 
 #topSection1 {
