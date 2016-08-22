@@ -45,7 +45,7 @@ header {
     padding: 8px;
     border-color: #a9bca9;
     border-radius: 8px;
-    border-style: solid;
+    /*border-style: solid;*/
     border-width: 1px;
     background-color: rgba(67, 86, 81, .7);
     box-shadow: 0 0 8px #b8c7b8;
