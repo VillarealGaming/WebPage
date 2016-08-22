@@ -7,61 +7,49 @@
     </head>
     <body>
         <header>
-            <div id="topSection1">
-                <img src="Images/hype.gif" alt="No se encontro la imagen." width="30%" height="50%" style="padding-top: 20px;">
-            </div>
-            <div id="topSection2">
-                <h3>Titulo</h3>
-            </div>
-            <div id="topSection3">
-                <h3>seccion 3</h3>
-                <input type="text" name="buscar" value="Buscar...">
-            </div>
         </header>
         <div id="loginTopPadding"></div>
         <div id="loginForm">
-            <h1>Login</h1>
+            <p>Registro</p>
+            <div>
+            </div>
             <table id = "loginTable">
                 <tr>
-                    <td>Nombre de la cuenta</td>
-                    <td><input type="text" name="nombreCuenta" value=""></td>
+                    <!--Nombre de cuenta-->
+                    <td><input type="text" placeholder="Nombre de la cuenta" name="nombreCuenta" value=""></td>
                 </tr>
                 <tr>
-                    <td>Nombre de usuario</td>
-                    <td><input type="text" name="nombreUsuario" value=""></td>
+                    <!--Nombre de usuario-->
+                    <td><input type="text"  placeholder="Nombre de usario"" name="nombreUsuario" value=""></td>
                 </tr>
                 <tr>
-                    <td>Descripción</td>
-                    <td><input type="text" name="descripcion" value="Algo sobre ti"></td>
+                    <!--descripcion-->
+                    <td><input type="text"  placeholder="Algo sobre ti..." name="descripcion" value=""></td>
                 </tr>
                 <tr>
-                    <td>Correo electronico</td>
-                    <td><input type="text" name="correo" value=""></td>
+                    <!--correo-->
+                    <td><input type="text" placeholder="Correo electrónico" name="correo" value=""></td>
                 </tr>
                 <tr>
-                    <td>Contraseña</td>
-                    <td><input type="password" name="contra" value=""></td>
+                    <!--Contraseña-->
+                    <td><input type="password" placeholder="Contraseña" name="contra" value=""></td>
                 </tr>
                 <tr>
-                    <td>Fecha de nacimiento</td>
+                    <!--Fecha de nacimiento-->
                     <td><input type="date" name="fechaNac" value=""></td>
                 </tr>
                 <tr>
-                    <td>Genero</td>
-                    <td><input type="radio" name="genero" value=""></td>
-                    <td><input type="radio" name="generoM" value=""></td>
+                    <td>
+                        Hombre<input type="radio" name="genero" value="">
+                        Mujer<input type="radio" name="genero" value=""></td>
                 </tr>
                 <tr>
-                    <td>Descripción</td>
-                    <td><input type="text" name="descripcion" value=""></td>
+                    <!--País / Ciudad-->
+                    <td><input type="text"  placeholder="País / Ciudad" name="paisCiudad" value=""></td>
                 </tr>
                 <tr>
-                    <td>País | Ciudad</td>
-                    <td><input type="text" name="paisCiudad" value=""></td>
-                </tr>
-                <tr>
-                    <td>Imagen de perfil</td>
-                    <td><input type="image" name="imgPerfil" value=""></td>
+                    <!--Imagen-->
+                    <td><input type="file" name="imagen" value=""></td>
                 </tr>
             </table>
         </div>
