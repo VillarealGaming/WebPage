@@ -10,48 +10,75 @@
         </header>
         <div id="loginTopPadding"></div>
         <div id="loginForm">
-            <p>Registro</p>
-            <div>
-            </div>
-            <table id = "loginTable">
-                <tr>
-                    <!--Nombre de cuenta-->
-                    <td><input type="text" placeholder="Nombre de la cuenta" name="nombreCuenta" value=""></td>
-                </tr>
-                <tr>
-                    <!--Nombre de usuario-->
-                    <td><input type="text"  placeholder="Nombre de usario"" name="nombreUsuario" value=""></td>
-                </tr>
-                <tr>
-                    <!--descripcion-->
-                    <td><input type="text"  placeholder="Algo sobre ti..." name="descripcion" value=""></td>
-                </tr>
-                <tr>
-                    <!--correo-->
-                    <td><input type="text" placeholder="Correo electrónico" name="correo" value=""></td>
-                </tr>
-                <tr>
-                    <!--Contraseña-->
-                    <td><input type="password" placeholder="Contraseña" name="contra" value=""></td>
-                </tr>
-                <tr>
-                    <!--Fecha de nacimiento-->
-                    <td><input type="date" name="fechaNac" value=""></td>
-                </tr>
-                <tr>
-                    <td>
-                        Hombre<input type="radio" name="genero" value="">
-                        Mujer<input type="radio" name="genero" value=""></td>
-                </tr>
-                <tr>
-                    <!--País / Ciudad-->
-                    <td><input type="text"  placeholder="País / Ciudad" name="paisCiudad" value=""></td>
-                </tr>
-                <tr>
-                    <!--Imagen-->
-                    <td><input type="file" name="imagen" value=""></td>
-                </tr>
-            </table>
+            <p id="signUpHeader">Registrate para compartir fotos y videos con tus amigos.</p>
+            <hr class="Separador">
+            <form>
+                <table class = "loginTable">
+                    <tr>
+                        <td><input type="text" placeholder="Nombre de la cuenta" name="nombreCuenta" value=""></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"  placeholder="Nombre de usario"" name="nombreUsuario" value=""></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="Correo electrónico" name="correo" value=""></td>
+                    </tr>
+                    <tr>
+                        <td><input type="password" placeholder="Contraseña" name="contra" value=""></td>
+                    </tr>
+                </table>
+                <hr class="Separador">
+                <table class = "loginTable"> 
+                    <tr>
+                        <td>
+                            <label for="fecNamLbl">Fecha de Nacimiento</label>
+                            <input type="date" id="fechaNacimiento" name="fechaNacimiento" value="">
+                        </td>
+                        <script type="text/javascript">
+                            document.getElementById("fechaNacimiento").valueAsDate = new Date();
+                        </script>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="radio" name="genero" value=""><label for="gen">Mujer</label>
+                            <input type="radio" name="genero" value=""><label for="gen">Hombre</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text"  placeholder="País" name="pais" value="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="text"  placeholder="Ciudad" name="ciudad" value="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><textarea rows="1" cols="1" name="descripcion" placeholder="Informacion adicional"></textarea></td>
+                    </tr>
+                </table>
+                <hr class="Separador">
+                <table class="loginTable">
+                    <tr>
+                        <td>
+                            <label for="imgPerfil">Imagen de Perfil</label>
+                            <input type="file" name="imgPerfil" value="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="imgPortada">Imagen de Portada</label>
+                            <input type="file" name="imgPortada" value="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" name="registrar" value="Registrarte">
+                        </td>
+                    </tr>
+                </table> 
+            </form>
         </div>
     </body>
 </html>

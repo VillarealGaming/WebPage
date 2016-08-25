@@ -1,15 +1,9 @@
-/*POSIBLE TODO: Asegurar que no pasen cosas raras si algún explorador
-no soporta alguna propiedad de estilo*/
 body {
     margin: 0px;
-    background-color: 	#f2f3f3;/*#efffef;*/
-    /*background: 
-        url("Images/loginBackground2.jpg") repeat,
-        radial-gradient(circle, gray, black);*/
-    /*probar en otros navegaores*/
+    background-color: 	#f2f3f3;
     background-blend-mode: overlay;
-    /*probar en otros navegaores*/
     height: 100vh;
+    
 }
 
 header {
@@ -18,92 +12,104 @@ header {
     background-image: -moz-linear-gradient(top, #008069, purple);
     background-image: linear-gradient(to right, #008069, purple);
     color: white;
-    height: 30px;
+    height: 50px;
     display: flex;
     text-align: center;
     border-bottom-width: 1px;
     border-bottom-style: solid;    
     border-bottom-color: #23C1A7;
-    /*background-image: -webkit-gradient(linear, left top, left bottom, from(#23C1A7), to(#89206A));
-    background-image: -webkit-linear-gradient(top, #23C1A7, #89206A);
-    background-image: -moz-linear-gradient(top, #23C1A7, #89206A);
-    background-image: linear-gradient(to bottom, #23C1A7, #89206A);*/
 }
-/*Para centrar verticalmente el div de login*/
+
 #loginTopPadding
 {
-    /*Usamos la medida vh para que este en base al viewport,
-    tambien probar en otros navegadores*/
-    height: 20vh;
-}
-#loginTable
-{
-    margin: auto;
+    height: 5vh;
 }
 
 #loginForm {
-    /*font*/
     background-color: white;
-    font-family: calibri, arial;
     font-size: .84em;
     color: #560B40;
-    /*box*/
     min-width: 400px;
     max-width: 400px;
-    margin-left: 7vw;
+    margin:auto;    
     padding: 8px;
     border-color: #a9bca9;
     border-radius: 8px;
-    /*border-style: solid;*/
     border-width: 1px;
-    /*background-color: rgba(67, 86, 81, .7);*/
-    box-shadow: 2px 2px 5px #560B40
-    /*#30B099;*/
+    box-shadow: 2px 2px 5px #560B40;
 }
-#loginForm p
+
+.Separador
 {
-    font-family: calibri,"century gothic", arial;
-    font-size: 2em;
-    margin: 8px;
-    margin-top: 0;
-    font-weight: lighter;
-}
-#loginForm div
-{
-    background-color: #dbc8d6;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(86, 11, 64, 0.7), rgba(0, 0, 0, 0));
     height: 1px;
     margin: auto;
-    margin-bottom: 8px;
+    margin-top: 4px;
+    margin-bottom: 4px;
     width: 300px;
 }
-#loginForm input 
-{
-    font-family: calibri, arial, sans-serif;
+
+#signUpHeader {
+    text-align: center;
+    color: rgba(86, 11, 64, 0.7);
+    font-family: calibri,"century gothic", arial;
+    font-size: 2em;
+    font-weight: lighter;
 }
-#loginForm table 
+
+.loginTable input, textarea
+{
+    font-family: Arial, sans-serif;
+    border-color: rgba(86, 11, 64, 0.3);
+    border-width: 1px;
+    padding: 4px;
+    padding-left: 4px;
+    outline-color: rgba(86, 11, 64, 0.7);
+}
+
+.loginTable input[type = date] {
+    color: rgba(86, 11, 64, 0.7);
+}
+
+.loginTable 
 {
     padding-left: 40px;
 }
-#loginForm table input[type = text],[type = password], [type= date]
+
+.loginTable label {
+    font-family: Arial;
+    color: rgba(86, 11, 64, 0.7);
+}
+
+.loginTable input[type = text],[type = password], [type= date]
 {
     height: 20px;
-    width: 240px;
-}
-#topSection1 {
-    width: 20%;
-    flex: 1;
+    width: 300px;
+} 
+
+.loginTable textarea {
+    resize: none;
+    width: 300px;
+    height: 40px;
 }
 
-#topSection2 {
-    width: 50%;
-    flex: 2;
-    font-size: 22pt;
+.loginTable input[type = submit] {
+    margin-top: 20px;
+    margin-left: 110px;
+    width: 100px;
+    height: 35px;
+    font-family: Arial;
+    font-size: 12pt;
+    color: #560B40;
+    background-color: white;
+    border: 1px solid #560B40;
+    font-weight: bold;
+}
+
+.loginTable input[type = submit]:hover {
     color: white;
-}
-
-#topSection3 {
-    width: 30%;
-    text-align: center;
+    background-color: rgba(86, 11, 64, 0.6);
+    border-color: rgba(86, 11, 64, 0.3);
 }
 
 #tituloPagina {
