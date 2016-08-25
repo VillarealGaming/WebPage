@@ -8,13 +8,29 @@
             function SignX() {
                 if (document.getElementById("signLink").innerHTML == "Registrarte") {
                     document.getElementById("signLink").innerHTML = "Entrar";
+                    document.getElementById("signUpHeader").innerHTML = "Registrate para compartir fotos y videos con tus amigos.";
+                    document.getElementById("signLinkLabel").innerHTML = "¿Ya tienes cuenta?";
+                    
                     document.getElementById("infoPersonal").style.display = "block";
+                    document.getElementById("SeparadorInfoP").style.display = "block";
+                    document.getElementById("SeparadorInfoImg").style.display = "block";
+                    document.getElementById("txtNombreCuenta").style.display = "block";
+                    document.getElementById("txtNombreUsuario").style.display = "block";
                     document.getElementById("infoImg").style.display = "block";
+                    document.getElementById("btnAceptar").value = "Registrarte";
                 } else {
                     document.getElementById("signLink").innerHTML = "Registrarte";
-                    
+                    document.getElementById("signUpHeader").innerHTML = "Inicia sesion para compartir fotos y videos con tus amigos.";
+                    document.getElementById("signLinkLabel").innerHTML = "¿No tienes cuenta aun?";
+
                     document.getElementById("infoPersonal").style.display = "none";
+                    document.getElementById("SeparadorInfoP").style.display = "none";
+                    document.getElementById("SeparadorInfoImg").style.display = "none";
+                    document.getElementById("txtNombreCuenta").style.display = "none";
+                    document.getElementById("txtNombreUsuario").style.display = "none";
                     document.getElementById("infoImg").style.display = "none";
+                    document.getElementById("btnAceptar").value = "Entrar";
+                    
                 }
             }
                         
@@ -30,19 +46,19 @@
             <form>
                 <table class = "loginTable" id="infoCuenta">
                     <tr>
-                        <td><input type="text" placeholder="Nombre de la cuenta" name="nombreCuenta" value=""></td>
+                        <td><input type="text" placeholder="Nombre de la cuenta" id="txtNombreCuenta" name="nombreCuenta" value=""></td>
                     </tr>
                     <tr>
-                        <td><input type="text"  placeholder="Nombre de usario"" name="nombreUsuario" value=""></td>
+                        <td><input type="text"  placeholder="Nombre de usario" id="txtNombreUsuario" name="nombreUsuario" value=""></td>
                     </tr>
                     <tr>
-                        <td><input type="text" placeholder="Correo electrónico" name="correo" value=""></td>
+                        <td><input type="text" placeholder="Correo electrónico" id="txtCorreo" name="correo" value=""></td>
                     </tr>
                     <tr>
-                        <td><input type="password" placeholder="Contraseña" name="contra" value=""></td>
+                        <td><input type="password" placeholder="Contraseña" id="txtContra" name="contra" value=""></td>
                     </tr>
                 </table>
-                <hr class="Separador">
+                <hr id="SeparadorInfoP" class="Separador">
                 <table class = "loginTable" id="infoPersonal"> 
                     <tr>
                         <td>
@@ -73,7 +89,7 @@
                         <td><textarea rows="1" cols="1" name="descripcion" placeholder="Informacion adicional"></textarea></td>
                     </tr>
                 </table>
-                <hr class="Separador">
+                <hr id="SeparadorInfoImg" class="Separador">
                 <table class="loginTable" id="infoImg">
                     <tr>
                         <td>
@@ -87,18 +103,21 @@
                             <input type="file" name="imgPortada" value="">
                         </td>
                     </tr>
+                    
+                </table>
+                <table class="loginTable">
                     <tr>
                         <td>
-                            <input type="submit" name="registrar" value="Registrarte">
+                            <input type="submit" id="btnAceptar" name="registrar" value="Registrarte">
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <label for="loginOpcion">¿Ya tienes cuenta?</label>
+                            <label for="loginOpcion" id="signLinkLabel">¿Ya tienes cuenta?</label>
                             <label for="loginOpcionLink" id="signLink" onclick="SignX()">Entrar</label>
                         </td>
                     </tr>
-                </table> 
+                </table>
             </form>
         </div>
     </body>
