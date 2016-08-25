@@ -4,6 +4,21 @@
         <link rel="stylesheet" type="text/css" href="style1.css">
         <meta charset="utf-8">
         <title>Prototipo</title>
+        <script type="text/javascript">
+            function SignX() {
+                if (document.getElementById("signLink").innerHTML == "Registrarte") {
+                    document.getElementById("signLink").innerHTML = "Entrar";
+                    document.getElementById("infoPersonal").style.display = "block";
+                    document.getElementById("infoImg").style.display = "block";
+                } else {
+                    document.getElementById("signLink").innerHTML = "Registrarte";
+                    
+                    document.getElementById("infoPersonal").style.display = "none";
+                    document.getElementById("infoImg").style.display = "none";
+                }
+            }
+                        
+        </script>
     </head>
     <body>
         <header>
@@ -13,7 +28,7 @@
             <p id="signUpHeader">Registrate para compartir fotos y videos con tus amigos.</p>
             <hr class="Separador">
             <form>
-                <table class = "loginTable">
+                <table class = "loginTable" id="infoCuenta">
                     <tr>
                         <td><input type="text" placeholder="Nombre de la cuenta" name="nombreCuenta" value=""></td>
                     </tr>
@@ -28,7 +43,7 @@
                     </tr>
                 </table>
                 <hr class="Separador">
-                <table class = "loginTable"> 
+                <table class = "loginTable" id="infoPersonal"> 
                     <tr>
                         <td>
                             <label for="fecNamLbl">Fecha de Nacimiento</label>
@@ -59,7 +74,7 @@
                     </tr>
                 </table>
                 <hr class="Separador">
-                <table class="loginTable">
+                <table class="loginTable" id="infoImg">
                     <tr>
                         <td>
                             <label for="imgPerfil">Imagen de Perfil</label>
@@ -75,6 +90,12 @@
                     <tr>
                         <td>
                             <input type="submit" name="registrar" value="Registrarte">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="loginOpcion">¿Ya tienes cuenta?</label>
+                            <label for="loginOpcionLink" id="signLink" onclick="SignX()">Entrar</label>
                         </td>
                     </tr>
                 </table> 

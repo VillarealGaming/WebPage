@@ -112,9 +112,21 @@ header {
     border-color: rgba(86, 11, 64, 0.3);
 }
 
+#signLink {
+    color: blue;
+    text-decoration: underline;
+}
+
+#signLink:hover {
+    cursor: pointer;
+}
+
+#signLink:active {
+    color: #560B40;
+}
+
 #tituloPagina {
-    color: white;
-    color: green;
+    color: white;   
     font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
     text-align: center;
     padding-top: 20px;
