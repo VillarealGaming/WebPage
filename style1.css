@@ -13,7 +13,6 @@ header {
     background-image: linear-gradient(to right, #008069, purple);
     color: white;
     height: 50px;
-    display: flex;
     text-align: center;
     border-bottom-width: 1px;
     border-bottom-style: solid;    
