@@ -45,7 +45,7 @@ header {
     margin: auto;
     margin-top: 4px;
     margin-bottom: 4px;
-    width: 300px;
+    width: 70%;
 }
 
 #signUpHeader {
@@ -92,11 +92,7 @@ header {
     height: 40px;
 }
 
-.loginTable input[type = submit] {
-    margin-top: 20px;
-    margin-left: 110px;
-    width: 100px;
-    height: 35px;
+.botonAceptar {
     font-family: Arial;
     font-size: 12pt;
     color: #560B40;
@@ -105,10 +101,17 @@ header {
     font-weight: bold;
 }
 
-.loginTable input[type = submit]:hover {
+.botonAceptar:hover {
     color: white;
     background-color: rgba(86, 11, 64, 0.6);
     border-color: rgba(86, 11, 64, 0.3);
+}
+
+#btnRegistrar {
+    margin-top: 20px;
+    margin-left: 110px;
+    width: 100px;
+    height: 35px;
 }
 
 #signLink {

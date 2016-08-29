@@ -13,12 +13,14 @@
                 border-right: 1px solid #23C1A7;
                 padding: 20px;
                 height: 200px;
+                background-color: white;
             }
             #contenido {
                 flex: 0 0 75%;
                 max-width: 75%;
                 padding: 10px;
-                height: 200px;
+                background-color: #f2f3f3;
+                height: 400px;
             }
             #imgPerfil {
                 max-width: 64px;
@@ -44,10 +46,36 @@
                 padding: 10px;
                 display: inline-block;
                 margin: 20px;
+                background-color: white;
             }
             #imgPubli {
-                max-width: 100%;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                max-width: 80%;
                 max-height: 30%;
+            }
+            #cajaComentario {
+                border-bottom: 1px solid rgba(86, 11, 64, 0.3);
+                margin-left: auto;
+                margin-right: auto;
+                width: 90%;
+            }
+            #infoComentario {
+                display: flex;
+            }
+            #infoComentario img{
+                max-width: 40px;
+                max-height: 40px;   
+                flex: 1;
+            }
+            #infoComentario textarea{ 
+                flex: 0 0 80%;
+                margin-left: 10px;
+                margin-bottom: 10px;
+            }
+            #inputComentario {
+                text-align: right;
             }
         </style>
     </head>
@@ -65,15 +93,24 @@
             <div id="contenido">
                 <div id="publicacion">
                     <img src="Images/loginBackground2.jpg" alt="no hype" id="imgPubli">
-                    <h4 class="text">Titulo de la publicacion.</h4>
+                    <h4 class="text">Titulo.</h4>
+                    <h5 class="text">Texto.</h5>
                     <hr class="Separador">
+                    <!-- Los comentarios se apilarian hacia abajo, haciendo el height de las
+                    publicaciones variar dependiendo de cuantos comentarios tengan -->
                     <h6>Comentarios</h6>
-                </div>
-                <div id="publicacion">
-                    <img src="Images/loginBackground2.jpg" alt="no hype" id="imgPubli">
-                    <h4 class="text">Titulo de la publicacion.</h4>
-                    <hr class="Separador">
-                    <h6>Comentarios</h6>
+                    <div id="cajaComentario">
+                        <div id="infoComentario">
+                            <img src="Images/hype.gif" alt="no hype">
+                            <textarea rows="2" cols=""></textarea>
+                        </div>
+                        <div id="inputComentario">
+                            <input type="button" class="botonAceptar" name="btnPublicar" value="Publicar">
+                        </div>
+                    </div>
+                    <div id="comentarios">
+                        
+                    </div>
                 </div>
             </div>
         </div>
