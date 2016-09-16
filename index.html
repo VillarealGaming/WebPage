@@ -11,85 +11,133 @@
         <header>
         </header>
         <div id="loginTopPadding"></div>
-        <div id="loginForm">
-            <p id="signUpHeader">Registrate para compartir fotos y videos con tus amigos.</p>
-            <hr class="Separador">
-            <form>
-                <table class = "loginTable" id="infoCuenta">
-                    <tr>
-                        <td><input type="text" placeholder="Nombre de la cuenta" id="txtNombreCuenta" name="nombreCuenta" value=""></td>
-                    </tr>
-                    <tr>
-                        <td><input type="text"  placeholder="Nombre de usario" id="txtNombreUsuario" name="nombreUsuario" value=""></td>
-                    </tr>
-                    <tr>
-                        <td><input type="text" placeholder="Correo electrónico" id="txtCorreo" name="correo" value=""></td>
-                    </tr>
-                    <tr>
-                        <td><input type="password" placeholder="Contraseña" id="txtContra" name="contra" value=""></td>
-                    </tr>
-                </table>
-                <hr id="SeparadorInfoP" class="Separador">
-                <table class = "loginTable" id="infoPersonal"> 
+        <div class="contenedor">
+            <div id="destacado">
+                <table>
+                    <th colspan="3">PUBLICACIONES DESTACADAS</th>
                     <tr>
                         <td>
-                            <label for="fecNamLbl">Fecha de Nacimiento</label>
-                            <input type="date" id="fechaNacimiento" name="fechaNacimiento" value="">
+                            <img src="Images/loginBackground1.jpg" alt="media not found" class="imgDestacada">
+                            <h3 class="imgDestacadaTitulo">Titulo</h3>
                         </td>
-                        <script type="text/javascript">
-                            document.getElementById("fechaNacimiento").valueAsDate = new Date();
-                        </script>
-                    </tr>
-                    <tr>
                         <td>
-                            <input type="radio" name="genero" value=""><label for="gen">Mujer</label>
-                            <input type="radio" name="genero" value=""><label for="gen">Hombre</label>
+                            <img src="Images/loginBackground1.jpg" alt="media not found" class="imgDestacada">
+                            <h3 class="imgDestacadaTitulo">Titulo</h3>
+                        </td>
+                        <td>
+                            <img src="Images/loginBackground1.jpg" alt="media not found" class="imgDestacada">
+                            <h3 class="imgDestacadaTitulo">Titulo</h3>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <input type="text"  placeholder="País" name="pais" value="">
+                            <img src="Images/loginBackground1.jpg" alt="media not found" class="imgDestacada">
+                            <h3 class="imgDestacadaTitulo">Titulo</h3>
+                        </td>
+                        <td>
+                            <img src="Images/loginBackground1.jpg" alt="media not found" class="imgDestacada">
+                            <h3 class="imgDestacadaTitulo">Titulo</h3>
+                        </td>
+                        <td>
+                            <img src="Images/loginBackground1.jpg" alt="media not found" class="imgDestacada">
+                            <h3 class="imgDestacadaTitulo">Titulo</h3>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <input type="text"  placeholder="Ciudad" name="ciudad" value="">
+                            <img src="Images/loginBackground1.jpg" alt="media not found" class="imgDestacada">
+                            <h3 class="imgDestacadaTitulo">Titulo</h3>
                         </td>
-                    </tr>
-                    <tr>
-                        <td><textarea rows="1" cols="1" name="descripcion" placeholder="Informacion adicional"></textarea></td>
-                    </tr>
-                </table>
-                <hr id="SeparadorInfoImg" class="Separador">
-                <table class="loginTable" id="infoImg">
-                    <tr>
                         <td>
-                            <label for="imgPerfil">Imagen de Perfil</label>
-                            <input type="file" name="imgPerfil" value="">
+                            <img src="Images/loginBackground1.jpg" alt="media not found" class="imgDestacada">
+                            <h3 class="imgDestacadaTitulo">Titulo</h3>
                         </td>
-                    </tr>
-                    <tr>
                         <td>
-                            <label for="imgPortada">Imagen de Portada</label>
-                            <input type="file" name="imgPortada" value="">
-                        </td>
-                    </tr>
-                    
-                </table>
-                <table class="loginTable">
-                    <tr>
-                        <td>
-                            <input type="submit" id="btnRegistrar" class="botonAceptar" name="registrar" value="Registrarte">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <label for="loginOpcion" id="signLinkLabel">¿Ya tienes cuenta?</label>
-                            <label for="loginOpcionLink" id="signLink" onclick="SignX()">Entrar</label>
+                            <img src="Images/loginBackground1.jpg" alt="media not found" class="imgDestacada">
+                            <h3 class="imgDestacadaTitulo">Titulo</h3>
                         </td>
                     </tr>
                 </table>
-            </form>
+            </div>
+            <div id="loginForm">
+                <p id="signUpHeader">Registrate para compartir fotos y videos con tus amigos.</p>
+                <hr class="Separador">
+                <form>
+                    <table class = "loginTable" id="infoCuenta">
+                        <tr>
+                            <td><input type="text" placeholder="Nombre de la cuenta" id="txtNombreCuenta" name="nombreCuenta" value=""></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"  placeholder="Nombre de usario" id="txtNombreUsuario" name="nombreUsuario" value=""></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" placeholder="Correo electrónico" id="txtCorreo" name="correo" value=""></td>
+                        </tr>
+                        <tr>
+                            <td><input type="password" placeholder="Contraseña" id="txtContra" name="contra" value=""></td>
+                        </tr>
+                    </table>
+                    <hr id="SeparadorInfoP" class="Separador">
+                    <table class = "loginTable" id="infoPersonal"> 
+                        <tr>
+                            <td>
+                                <label for="fecNamLbl">Fecha de Nacimiento</label>
+                                <input type="date" id="fechaNacimiento" name="fechaNacimiento" value="">
+                            </td>
+                            <script type="text/javascript">
+                                document.getElementById("fechaNacimiento").valueAsDate = new Date();
+                            </script>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="radio" name="genero" value=""><label for="gen">Mujer</label>
+                                <input type="radio" name="genero" value=""><label for="gen">Hombre</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text"  placeholder="País" name="pais" value="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="text"  placeholder="Ciudad" name="ciudad" value="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><textarea rows="1" cols="1" name="descripcion" placeholder="Informacion adicional"></textarea></td>
+                        </tr>
+                    </table>
+                    <hr id="SeparadorInfoImg" class="Separador">
+                    <!--<table class="loginTable" id="infoImg">
+                        <tr>
+                            <td>
+                                <label for="imgPerfil">Imagen de Perfil</label>
+                                <input type="file" name="imgPerfil" value="">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="imgPortada">Imagen de Portada</label>
+                                <input type="file" name="imgPortada" value="">
+                            </td>
+                        </tr>
+                    </table>-->
+                    <table class="loginTable">
+                        <tr>
+                            <td>
+                                <input type="submit" id="btnRegistrar" class="botonAceptar" name="registrar" value="Registrarte">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <label for="loginOpcion" id="signLinkLabel">¿Ya tienes cuenta?</label>
+                                <label for="loginOpcionLink" id="signLink" onclick="SignX()">Entrar</label>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
         </div>
     </body>
 </html>
