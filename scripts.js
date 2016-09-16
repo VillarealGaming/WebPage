@@ -27,15 +27,15 @@ function SignX() {
 }
 
 function CreatePost(mediaSource, title, description) {
-    document.writeln("<div id='Publicacion'>");
-        document.writeln("<img src=mediaSource alt='media not found' id='imgPerfil'>");
-        document.writeln("<h4 class='Text'>title</h4>");
-        document.writeln("<h5 class='Text'>description</h5>");
+    document.writeln("<div id='publicacion'>");
+        document.writeln("<img src=" + mediaSource + " alt='media not found' id='imgPubli'>");
+        document.writeln("<h4 class='Text' class='title'>" + title + "</h4>");
+        document.writeln("<h5 class='Text' class='description'>" + description + "</h5>");
         document.writeln("<hr class='Separador'>");
         document.writeln("<h6>Comentarios</h6>");
-        document.writeln("<div id='cajaComentario>'");
+        document.writeln("<div id='cajaComentario'>");
             document.writeln("<div id='infoComentario'>");
-                document.writeln("<img src='Images/hype.gif' alt='not found'>");
+                document.writeln("<img src='Images/loginBackground2.jpg' alt='not found'>");
                 document.writeln("<textarea rows=2></textarea>");
             document.writeln("</div>");
             document.writeln("<div id='inputComentario'>");
