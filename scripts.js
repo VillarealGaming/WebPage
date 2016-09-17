@@ -1,3 +1,9 @@
+function GetElementInsideContainer(containerID, childID) {
+    var elm = document.getElementById(childID);
+    var parent = elm ? elm.parentNode : {};
+    return (parent.id && parent.id === containerID) ? elm : {};
+}
+
 function SignX() {
     if (document.getElementById("signLink").innerHTML == "Registrarte") {
         document.getElementById("signLink").innerHTML = "Entrar";
@@ -9,8 +15,10 @@ function SignX() {
         document.getElementById("SeparadorInfoImg").style.display = "block";
         document.getElementById("txtNombreCuenta").style.display = "block";
         document.getElementById("txtNombreUsuario").style.display = "block";
-        document.getElementById("infoImg").style.display = "block";
-        document.getElementById("btnAceptar").value = "Registrarte";
+        //document.getElementById("infoImg").style.display = "block";
+        document.getElementById("btnRegistrar").value = "Registrarte";
+
+        document.getElementById("loginForm").style.height = "600px";
     } else {
         document.getElementById("signLink").innerHTML = "Registrarte";
         document.getElementById("signUpHeader").innerHTML = "Inicia sesion para compartir fotos y videos con tus amigos.";
@@ -21,33 +29,55 @@ function SignX() {
         document.getElementById("SeparadorInfoImg").style.display = "none";
         document.getElementById("txtNombreCuenta").style.display = "none";
         document.getElementById("txtNombreUsuario").style.display = "none";
-        document.getElementById("infoImg").style.display = "none";
-        document.getElementById("btnAceptar").value = "Entrar";
+        // document.getElementById("infoImg").style.display = "none";
+        document.getElementById("btnRegistrar").value = "Entrar";
+
+        document.getElementById("loginForm").style.height = "300px";
     }
 }
 
+var idPublicacion = 0;
+var columnaActual = 0;
+
 function CreatePost(mediaSource, title, description) {
-    document.writeln("<div class='publicacion'>");
-        document.writeln("<img src=" + mediaSource + " alt='media not found' id='imgPubli'>");
-        document.writeln("<h4 class='Text Title'>" + title + "</h4>");
-        document.writeln("<h5 class='Text Description'>" + description + "</h5>");
-        document.writeln("<hr class='Separador'>");
-        document.writeln("<h6 class='Text'>Comentarios</h6>");
-        document.writeln("<div id='cajaComentario'>");
-            document.writeln("<div id='infoComentario'>");
-                document.writeln("<img src='Images/loginBackground2.jpg' alt='not found'>");
-                document.writeln("<textarea rows=2></textarea>");
-            document.writeln("</div>");
-            document.writeln("<div id='inputComentario'>");
-                document.writeln("<input type='button' class='botonAceptar' name='btnPublicar' value='Publicar'>");
-            document.writeln("</div>");
-        document.writeln("</div>");
-        document.writeln("<div id='comentarios'>");
-        
-        document.writeln("</div>");
-    document.writeln("</div>");
+    document.getElementById("columna" + columnaActual).innerHTML += "" +
+        "<div class='publicacion' id='publicacion_" + idPublicacion + "'>" +
+            "<img src=" + mediaSource + " alt='media not found' id='imgPubli'>" +
+            "<h4 class='Text Title'>" + title + "</h4>" +
+            "<h5 class='Text Description'>" + description + "</h5>" +
+            "<hr class='Separador'>" +
+            "<h6 class='Text'>Comentarios</h6>" +
+            "<div id='cajaComentario'>" +
+                "<div class='infoComentario'>" +
+                    "<img class='imgComentario' src='Images/loginBackground2.jpg' alt='not found'>" +
+                    "<textarea rows=2></textarea>" +
+                "</div>" +
+                "<div id='inputComentario'>" +
+                    "<input type='button' class='botonAceptar' name='btnPublicar' value='Publicar'>" +
+                "</div>" +
+            "</div>" +
+            "<div id='comentarios'>" +
+            "</div>" +
+        "</div>" +
+    + "";
+    idPublicacion++;
+    if (columnaActual == 0) {
+        columnaActual = 1;
+    } else {
+        columnaActual = 0;
+    }
 }
 
-function LoadComment(imgPerfil, comment, date, hour) {
-
+function LoadComment(idPubli, imgPerfil, usuario, comentario, fecha, hora) {
+    GetElementInsideContainer(idPubli, "comentarios").innerHTML += "" +
+        "<div class='comentario'>" +
+            "<img class='imgComentario' src='Images/loginBackground2.jpg' alt='not found'>" + 
+            "<div class='infoComentario'>" +
+                "<a href=''>" +
+                "<span>" + usuario + "</span>" +
+                "</a>" +
+                "<span>" + comentario + "</span>" +
+            "</div>" +
+        "</div>"
+    + "";
 }

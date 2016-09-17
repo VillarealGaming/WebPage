@@ -18,10 +18,17 @@
             }
             #contenido {
                 flex: 0 0 75%;
+                display: flex;
                 max-width: 75%;
                 padding: 10px;
                 background-color: #f2f3f3;
                 height: 400px;
+            }
+            #columna0 {
+                flex: 1;
+            }
+            #columna1 {
+                flex: 0 0 50%;
             }
             #imgPerfil {
                 max-width: 64px;
@@ -30,10 +37,12 @@
                 float: left;
             }
             .Text {
-                font-family: calibri,"century gothic", arial;
+                font-family: Arial;
             }
             .Title {
                 font-size: 2em;
+                font-family: Arial;
+                color: rgba(86, 11, 64, 0.9 );
                 padding-bottom: 0px;
                 padding-top: 0px;
                 margin-top: 4px;
@@ -41,8 +50,9 @@
             }
             .Description {
                 font-size: 1em;
-                color: grey;
-                padding-bottom: 0px;
+                font-family: Arial;
+                color: rgba(86, 11, 64, 0.5);
+                padding-bottom: 4px;
                 padding-top: 0px;
                 margin-top: 4px;
                 margin-bottom: 0px;
@@ -56,12 +66,12 @@
                 font-weight: lighter;
             }
             .publicacion {
-                width: 40%;
+                width: 90%;
                 border: 1px solid #23C1A7;
                 box-shadow: 1px 2px 3px #560B40;
                 padding: 10px;
+                margin-bottom: 20px;
                 display: inline-block;
-                margin: 20px;
                 background-color: white;
             }
             #imgPubli {
@@ -71,24 +81,54 @@
                 max-width: 80%;
                 max-height: 30%;
             }
+            .publicacion h6 {
+                color: rgba(86, 11, 64, 0.9);
+            }
             #cajaComentario {
                 border-bottom: 1px solid rgba(86, 11, 64, 0.3);
                 margin-left: auto;
                 margin-right: auto;
                 width: 90%;
             }
-            #infoComentario {
+            .infoComentario {
+                width: 90%;
                 display: flex;
+                overflow-wrap:break-word;
             }
-            #infoComentario img{
+            .comentario {
+                display: flex;
+                padding-top: 5px;
+            }
+            .imgComentario{
                 max-width: 40px;
                 max-height: 40px;   
-                flex: 1;
             }
-            #infoComentario textarea{ 
+            .comentario .imgComentario {
+                height: 100%;   
+            }
+            .infoComentario textarea{ 
                 flex: 0 0 80%;
                 margin-left: 10px;
                 margin-bottom: 10px;
+            }
+            .infoComentario a {
+                text-decoration: none;
+            }
+            .infoComentario a span {
+                float: left;
+                color: #23C1A7;
+                font-family: Arial;
+                font-weight: bold;
+                font-size: 12pt;
+                margin-top: 0px;
+            }
+            .infoComentario span{
+                float: left;
+                font-family: Arial;
+                font-size: 12pt;
+                color: rgba(86, 11, 64, 0.8);
+                padding-left: 5px;
+                margin-top: 0px;
             }
             #inputComentario {
                 text-align: right;
@@ -107,11 +147,35 @@
                 </div>
             </aside>
             <div id="contenido">
+                <div id="columna0">
+                </div>
+                <div id="columna1">
+                </div>
                 <script>
                     CreatePost("Images/loginBackground1.jpg", "holaaa", "adiosss");
                     CreatePost("Images/loginBackground1.jpg", "holaaa", "adiosss");
                     CreatePost("Images/loginBackground1.jpg", "holaaa", "adiosss");
                     CreatePost("Images/loginBackground1.jpg", "holaaa", "adiosss");
+                    
+                    LoadComment("publicacion_1", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                    LoadComment("publicacion_1", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                    LoadComment("publicacion_1", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                    LoadComment("publicacion_1", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                    LoadComment("publicacion_1", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                    LoadComment("publicacion_1", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                    LoadComment("publicacion_1", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                    LoadComment("publicacion_1", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                    LoadComment("publicacion_1", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                    LoadComment("publicacion_1", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                    LoadComment("publicacion_1", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                    LoadComment("publicacion_1", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                    
+
+                    LoadComment("publicacion_1", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                    LoadComment("publicacion_1", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                    LoadComment("publicacion_1", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                    LoadComment("publicacion_1", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                    LoadComment("publicacion_1", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
                 </script>
                 <!--<div id="publicacion">
                     <img src="Images/loginBackground2.jpg" alt="no hype" id="imgPubli">

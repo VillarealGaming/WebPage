@@ -28,11 +28,17 @@ header {
 }
 
 #destacado {
-    /*flex: 0 0 0 40%;*/
+    flex: 0 0 0 40%;
+    margin: auto;
 }
 
 #destacado table {
     display: block;
+}
+
+#destacado table th {
+    font-size: 20pt;
+    padding-bottom: 10px;
 }
 
 #destacado table tr td {
@@ -40,9 +46,19 @@ header {
     padding-right: 20px;
 }
 
+#destacado table tr td a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#destacado table tr td a h4 {
+    font-size: 10pt;
+    font-weight: normal;
+}
+
 .imgDestacada {
-    width: 200px;
-    height: 200px;
+    width: 140px;
+    height: 140px;
     margin: auto;
 }
 
@@ -57,6 +73,7 @@ header {
     color: #560B40;
     min-width: 400px;
     max-width: 400px;
+    max-height: 600px;
     margin-left: auto;
     margin-right: auto;
     padding: 8px;
@@ -103,9 +120,10 @@ header {
     padding-left: 40px;
 }
 
-.loginTable label {
+.loginTable label, #destacado table th {
     font-family: Arial;
     color: rgba(86, 11, 64, 0.7);
+    font-weight: normal;
 }
 
 .loginTable input[type = text],[type = password], [type= date]
