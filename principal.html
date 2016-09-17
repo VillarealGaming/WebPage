@@ -8,12 +8,13 @@
         <style>
             #wrapper {
                 display: flex;
+                margin-top: 35px;
             }
             #barraNavegacion {
                 flex: 1;
                 border-right: 1px solid #23C1A7;
                 padding: 20px;
-                height: 200px;
+                /*height: 100%;*/
                 background-color: white;
             }
             #contenido {
@@ -64,6 +65,13 @@
             #nombreCuenta {
                 color: rgba(86, 11, 64, 0.7);
                 font-weight: lighter;
+            }
+            .textoImprovisado
+            {
+                color: rgba(86, 11, 64, 0.5);
+                font-family: Arial;
+                margin: 5px;
+                margin-left: 0px;
             }
             .publicacion {
                 width: 90%;
@@ -133,6 +141,22 @@
             #inputComentario {
                 text-align: right;
             }
+            #tablaNavegacion
+            {
+                border-collapse: collapse;
+                border-spacing: 0px;
+                width: 100%;
+            }
+            #tablaNavegacion td 
+            {
+                padding: 0px;
+            }
+            #tablaNavegacion td:hover
+            {
+                background-color: #f2e6ff;
+                cursor: pointer;
+                cursor: hand;
+            }
         </style>
     </head>
     <body>
@@ -144,6 +168,14 @@
                 <div>
                     <h1 id="nombreUsuario" class="text">Nombre de Usuario</h1>
                     <h4 id="nombreCuenta" class="text">@Nombre de la cuenta</h4>
+                    <table id= "tablaNavegacion">
+                        <tr>
+                            <td><h4 class = "textoImprovisado">Seguidores</h4></td>
+                        </tr>
+                        <tr>
+                            <td><h4 class = "textoImprovisado">Seguidos</h4></td>
+                        </tr>
+                    </table>
                 </div>
             </aside>
             <div id="contenido">
