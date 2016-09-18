@@ -58,8 +58,7 @@ function CreatePost(mediaSource, title, description) {
             "</div>" +
             "<div id='comentarios_" + idPublicacion + "'>" +
             "</div>" +
-        "</div>" +
-    + "";
+        "</div>";
     idPublicacion++;
     if (columnaActual == 0) {
         columnaActual = 1;
