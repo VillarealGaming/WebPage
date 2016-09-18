@@ -56,7 +56,7 @@ function CreatePost(mediaSource, title, description) {
                     "<input type='button' class='botonAceptar' name='btnPublicar' value='Publicar'>" +
                 "</div>" +
             "</div>" +
-            "<div id='comentarios'>" +
+            "<div id='comentarios_" + idPublicacion + "'>" +
             "</div>" +
         "</div>" +
     + "";
@@ -69,7 +69,8 @@ function CreatePost(mediaSource, title, description) {
 }
 
 function LoadComment(idPubli, imgPerfil, usuario, comentario, fecha, hora) {
-    GetElementInsideContainer(idPubli, "comentarios").innerHTML += "" +
+    var idCom = idPubli.split("_").pop();
+    GetElementInsideContainer(idPubli, "comentarios_" + idCom).innerHTML += "" +
         "<div class='comentario'>" +
             "<img class='imgComentario' src='Images/loginBackground2.jpg' alt='not found'>" + 
             "<div class='infoComentario'>" +
