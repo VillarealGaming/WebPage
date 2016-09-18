@@ -105,7 +105,11 @@ header span {
     margin: auto;
     margin-top: 4px;
     margin-bottom: 4px;
+<<<<<<< HEAD
     width: 80%;
+=======
+    width: 90%;
+>>>>>>> origin/Barra-de-navegación
 }
 
 #signUpHeader {
