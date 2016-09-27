@@ -2,39 +2,62 @@
 <html>
     <head>
         <title>Perfil</title>
+        <link rel="stylesheet" type="text/css" href="style1.css">
         <style>
             body {
-                margin: 0px;
+                display: block;
             }
-            header {
-                    background-image: -webkit-gradient(linear, left top, left bottom, from(#008069), to(purple));
-                    background-image: -webkit-linear-gradient(top, #008069, purple);
-                    background-image: -moz-linear-gradient(top, #008069, purple);
-                    background-image: linear-gradient(to right, #008069, purple);
-                    color: white;
-                    height: 50px;
-                    text-align: center;
-                    border-bottom-width: 1px;
-                    border-bottom-style: solid;    
-                    border-bottom-color: #23C1A7;
+            ul {
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+                overflow: hidden;
+                background-color: #008069;
             }
-            #imgPortada img{
-                width: 100%;
+            li {
+                float: left;
+            }
+            li a {
+                display: block;
+                padding: 16px 50px;
+                text-decoration: none;
+                color: white;
+            }
+            li a:hover {
+                background-color: #ddd;
+                color: #008069;
+            }
+            #imgPortada {
+                height: 300px;
+                border-bottom: 1px dotted black;
+            }
+            #infoUsuario {
+                display: flex;
                 height: 250px;
-                margin: 0px;
-                background-color: purple;
+                border-bottom: 1px dotted black;
             }
-            #userInfo {
-                padding-top: 20px;
-                width: 100%;
-                height: 50vh; 
-                display: flex;  
+            #infoUsuario div:first-child {
+                flex: 1;
             }
-            #userImg {
-                width: 200px;
-                height: 200px;
-                margin: 50px;
-                border-radius:80px;
+            #infoUsuario div:last-child {
+                flex: 0 0 80%;
+            }
+            #infoUsuario div:first-child img {
+                width: 80%;
+                height: 80%;
+                margin-left: 20px;
+                margin-top: 20px;
+                border-radius: 50px;
+            }
+            #infoUsuario div:last-child p {
+                width: 30%;
+            }
+            #navegacion {
+                height: 50px;
+                border-bottom: 1px dotted black;
+            }
+            #contenido {
+                height: 300px;
             }
         </style>
     </head>
@@ -42,11 +65,38 @@
         <header>
         </header>
         <div id="imgPortada">
-            <img src="Images/loginBackground.png" alt="no hype">
-        </div>  
-        <div id="userInfo">
-            <img src="Images/loginBackground1.jpg" alt="no hype" id="userImg">
+            <!-- <img src="Images/loginBackground.png" alt="no hype"> -->
         </div>
-         
+        <div id="infoUsuario">
+            <div>
+                <img src="Images/loginBackground2.jpg" alt="no hype">
+            </div>
+            <div>
+                <h1>Nombre de Usuario</h1>
+                <h2>@Nombre de la Cuenta</h2>
+                <p>De *Estado*, *Pais*</p>
+                <p>Descripcion / Informacion adicional espero que este si haga salto de linea para poder aplicarselo a las cajas de comentarios</p>
+
+            </div>
+        </div>
+        <div id="navegacion">
+            <ul>
+                <li>
+                    <a href="">Mis Publicacions</a>
+                </li>
+                <li>
+                    <a href="">Notificaciones</a>
+                </li>
+                <li>
+                    <a href="">Seguidores</a>
+                </li>
+                <li>
+                    <a href="">Siguiendo</a>
+                </li>
+            </ul>
+        </div>
+        <div id="contenido">
+            
+        </div>
     </body>
 </html>
