@@ -151,6 +151,10 @@ header span {
     height: 40px;
 }
 
+#infoPersonal {
+    padding-top: 10px;
+}
+
 .botonAceptar {
     font-family: Arial;
     font-size: 12pt;
@@ -167,7 +171,8 @@ header span {
 }
 
 #btnRegistrar {
-    margin-top: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
     margin-left: 110px;
     width: 100px;
     height: 35px;
