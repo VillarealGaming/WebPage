@@ -16,10 +16,7 @@
                 border-right: 1px solid #23C1A7;
                 padding: 20px;
                 padding: 0px;
-<<<<<<< HEAD
                 height: 100%;
-=======
->>>>>>> origin/master
                 background-color: white;
                 min-width: 250px;
                 max-width: 250px;
@@ -27,28 +24,59 @@
                 position: fixed;
             }
             #ingresar {
+                width: 50%;
+                display: inline-block;
                 background-color: white;
                 border: 1px solid #23C1A7;
                 box-shadow: 1px 2px 3px #560B40;
                 height: 200px;
                 margin-bottom: 20px;
             }
+            #ingresar div {
+                display: flex;
+            }
+            #ingresar div #imgNPubli {
+                /*display: inline-block;*/
+                flex: 0 0 30%;
+                height: 140px;
+                margin-left: 20px;
+                margin-top: 20px;
+                border: 1px dotted #560B40;
+            }
+            #ingresar div #metaNPubli {
+                flex: 1;
+                display: inline-block;
+                padding-top: 20px;
+                padding-left: 20px;
+            }
+            #ingresar div #metaNPubli input[type="text"] {
+                width: 90%;
+                height: 20px;
+                outline-color: rgba(86, 11, 64, 0.7);
+            }
+            #ingresar div #metaNPubli textarea {
+                margin-top: 10px;
+                width: 88%;
+                resize: none;
+            }
+            #ingresar input[type="file"] {
+                padding-top: 10px;
+                padding-left: 20px;
+                margin-right: 75px;
+                color: #560B40;
+            }
             #contenido {
                 flex: 0 0 75%;
                 display: block;
-                /*max-width: 95%;*/
                 background-color: #f2f3f3;
                 height: 400px;
-<<<<<<< HEAD
                 margin-left: 250px;
                 padding-right: 0px;
-=======
                 margin-left: 300px;
                 margin-top: 20px;
             }
             #publicaciones {
                 display: flex;
->>>>>>> origin/master
             }
             #columna0 {
                 flex: 1;
@@ -269,7 +297,15 @@
             </aside>
             <div id="contenido">
                 <div id="ingresar">
-                    
+                    <div>
+                        <div id="imgNPubli"></div>
+                        <div id="metaNPubli">
+                            <input type="text" name="titulo" placeholder="Titulo de la publicacion">
+                            <textarea rows="6" placeholder="Descripción"></textarea>
+                        </div>
+                    </div>
+                    <input type="file" name="loadImg">
+                    <input type="submit" name="btn_Publicar" value="Publicar">
                 </div>
                 <div id="publicaciones">
                     <div id="columna0">
@@ -277,43 +313,43 @@
                     <div id="columna1">
                     </div>
                     <script>
-                        CreatePost("Images/loginBackground1.jpg", "holaaa", "adiosss");
-                        CreatePost("Images/loginBackground1.jpg", "holaaa", "adiosss");
-                        CreatePost("Images/loginBackground1.jpg", "holaaa", "adiosss");
-                        CreatePost("Images/loginBackground1.jpg", "holaaa", "adiosss");
-                        CreatePost("Images/loginBackground1.jpg", "holaaa", "adiosss");
+                        // CreatePost("Images/loginBackground1.jpg", "holaaa", "adiosss");
+                        // CreatePost("Images/loginBackground1.jpg", "holaaa", "adiosss");
+                        // CreatePost("Images/loginBackground1.jpg", "holaaa", "adiosss");
+                        // CreatePost("Images/loginBackground1.jpg", "holaaa", "adiosss");
+                        // CreatePost("Images/loginBackground1.jpg", "holaaa", "adiosss");
 
-                        LoadComment("publicacion_0", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
-                        LoadComment("publicacion_0", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
-                        LoadComment("publicacion_0", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
-                        LoadComment("publicacion_0", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
-                        LoadComment("publicacion_0", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
-                        LoadComment("publicacion_0", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
-                        LoadComment("publicacion_0", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
-                        LoadComment("publicacion_0", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
-                        LoadComment("publicacion_0", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
-                        LoadComment("publicacion_0", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
-                        LoadComment("publicacion_0", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
-                        LoadComment("publicacion_0", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        // LoadComment("publicacion_0", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        // LoadComment("publicacion_0", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        // LoadComment("publicacion_0", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        // LoadComment("publicacion_0", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        // LoadComment("publicacion_0", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        // LoadComment("publicacion_0", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        // LoadComment("publicacion_0", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        // LoadComment("publicacion_0", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        // LoadComment("publicacion_0", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        // LoadComment("publicacion_0", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        // LoadComment("publicacion_0", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        // LoadComment("publicacion_0", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
                         
-                        LoadComment("publicacion_1", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
-                        LoadComment("publicacion_1", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
-                        LoadComment("publicacion_1", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
-                        LoadComment("publicacion_1", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
-                        LoadComment("publicacion_1", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        // LoadComment("publicacion_1", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        // LoadComment("publicacion_1", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        // LoadComment("publicacion_1", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        // LoadComment("publicacion_1", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        // LoadComment("publicacion_1", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
 
-                        LoadComment("publicacion_3", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
-                        LoadComment("publicacion_3", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
-                        LoadComment("publicacion_3", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
-                        LoadComment("publicacion_3", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
-                        LoadComment("publicacion_3", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
-                        LoadComment("publicacion_3", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
-                        LoadComment("publicacion_3", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
-                        LoadComment("publicacion_3", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
-                        LoadComment("publicacion_3", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
-                        LoadComment("publicacion_3", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
-                        LoadComment("publicacion_3", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
-                        LoadComment("publicacion_3", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");                    
+                        // LoadComment("publicacion_3", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        // LoadComment("publicacion_3", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        // LoadComment("publicacion_3", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        // LoadComment("publicacion_3", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        // LoadComment("publicacion_3", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        // LoadComment("publicacion_3", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        // LoadComment("publicacion_3", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        // LoadComment("publicacion_3", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        // LoadComment("publicacion_3", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        // LoadComment("publicacion_3", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        // LoadComment("publicacion_3", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        // LoadComment("publicacion_3", "Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");                    
                     </script>
                 </div>
             </div>

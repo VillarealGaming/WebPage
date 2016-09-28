@@ -2,7 +2,6 @@ body {
     margin: 0px;
     background-color: 	#f2f3f3;
     background-blend-mode: overlay;
-    /*height: 100vh;*/
 }
 
 header {
@@ -11,13 +10,8 @@ header {
     background-image: -moz-linear-gradient(top, #008069, purple);
     background-image: linear-gradient(to right, #008069, purple);
     color: white;
-    height: 35px;
     width: 100vw;
-<<<<<<< HEAD
-    height: 40px;
-=======
     height: 60px;
->>>>>>> origin/master
     text-align: center;
     border-bottom-width: 1px;
     border-bottom-style: solid;    
@@ -32,6 +26,21 @@ header span {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20pt;
     padding-top: 20px;
+}
+
+input[type="button"], input[type="submit"]{
+    font-family: Arial;
+    font-size: 12pt;
+    color: #560B40;
+    background-color: white;
+    border: 1px solid #560B40;
+    font-weight: bold;
+}
+
+input[type="button"]:hover, input[type="submit"]:hover {
+    color: white;
+    background-color: rgba(86, 11, 64, 0.6);
+    border-color: rgba(86, 11, 64, 0.3);
 }
 
 #loginTopPadding
@@ -159,7 +168,7 @@ header span {
     padding-top: 10px;
 }
 
-.botonAceptar {
+/*.botonAceptar {
     font-family: Arial;
     font-size: 12pt;
     color: #560B40;
@@ -172,7 +181,7 @@ header span {
     color: white;
     background-color: rgba(86, 11, 64, 0.6);
     border-color: rgba(86, 11, 64, 0.3);
-}
+}*/
 
 #btnRegistrar {
     margin-top: 10px;
