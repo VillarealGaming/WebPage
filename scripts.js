@@ -39,44 +39,59 @@ function SignX() {
 var idPublicacion = 0;
 var columnaActual = 0;
 
+function Post() {
+    var title = $('#ingresar div:last-child input').get(0).value;
+    var description = $("#ingresar div:last-child textarea").get(0).value;
+    var mediaSource = $("#ingresar input[type = 'file']").get(0).value;
+    CreatePost("Images/loginBackground2.jpg", title, description);
+}
+
 function CreatePost(mediaSource, title, description) {
-    document.getElementById("columna" + columnaActual).innerHTML += "" +
-        "<div class='publicacion' id='publicacion_" + idPublicacion + "'>" +
-            "<img src=" + mediaSource + " alt='media not found' id='imgPubli'>" +
-            "<h4 class='Text Title'>" + title + "</h4>" +
-            "<h5 class='Text Description'>" + description + "</h5>" +
+    var columna = document.getElementById("columna" + columnaActual);
+    var oldHtml = columna.innerHTML;
+    columna.innerHTML = "" +
+            "<div class='publicacion' id='publicacion_" + idPublicacion + "'>" +
+            "<img src=" + mediaSource + " alt='media not found'>" +
+            "<h4 class='Title'>" + title + "</h4>" +
+            "<h5 class='Description'>" + description + "</h5>" +
             "<hr class='Separador'>" +
-            "<h6 class='Text'>Comentarios</h6>" +
-            "<div id='cajaComentario'>" +
-                "<div class='infoComentario'>" +
-                    "<img class='imgComentario' src='Images/loginBackground2.jpg' alt='not found'>" +
+            "<h6>Comentarios</h6>" +
+            "<div>" +
+                "<div>" +
+                    "<img src='Images/loginBackground2.jpg' alt='not found'>" +
                     "<textarea rows=2></textarea>" +
                 "</div>" +
-                "<div id='inputComentario'>" +
-                    "<input type='button' class='botonAceptar' name='btnPublicar' value='Publicar'>" +
+                "<div>" +
+                    "<input type='button' name='btnPublicar' value='Publicar'>" +
                 "</div>" +
             "</div>" +
             "<div id='comentarios_" + idPublicacion + "'>" +
             "</div>" +
-        "</div>";
+        "</div>" + oldHtml;
     idPublicacion++;
-    if (columnaActual == 0) {
-        columnaActual = 1;
-    } else {
-        columnaActual = 0;
-    }
+    columnaActual == 0 ? columnaActual = 1 : columnaActual = 0;
+    Notificate(0, "Yamil");
+}
+
+function Notificate(type, idUsuario, idPubli) {
+    var newItem = document.createElement("li");
+    newItem.innerHTML = "<img src='Images/NotificationIcon.png' alt='not found'>" +
+                        "<p>UsuarioX ha X.</p>";
+
+    var list = document.getElementById("notificacion");  
+    list.insertBefore(newItem, list.childNodes[0]);
 }
 
 function LoadComment(idPubli, imgPerfil, usuario, comentario, fecha, hora) {
     var idCom = idPubli.split("_").pop();
     GetElementInsideContainer(idPubli, "comentarios_" + idCom).innerHTML += "" +
         "<div class='comentario'>" +
-            "<img class='imgComentario' src='Images/loginBackground2.jpg' alt='not found'>" + 
-            "<div class='infoComentario'>" +
+            "<img src='Images/loginBackground2.jpg' alt='not found'>" + 
+            "<div>" +
                 "<a href=''>" +
-                "<span>" + usuario + "</span>" +
+                "<p>" + usuario + "</p>" +
                 "</a>" +
-                "<span>" + comentario + "</span>" +
+                "<p>" + comentario + "</p>" +
             "</div>" +
         "</div>"
     + "";

@@ -27,7 +27,10 @@ header span {
     font-size: 20pt;
     padding-top: 20px;
 }
-
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: #560B40;
+    opacity: 0.6;
+}
 input[type="button"], input[type="submit"]{
     font-family: Arial;
     font-size: 12pt;
@@ -35,12 +38,17 @@ input[type="button"], input[type="submit"]{
     background-color: white;
     border: 1px solid #560B40;
     font-weight: bold;
+    outline-color: rgba(86, 11, 64, 0.7);
 }
 
 input[type="button"]:hover, input[type="submit"]:hover {
     color: white;
     background-color: rgba(86, 11, 64, 0.6);
     border-color: rgba(86, 11, 64, 0.3);
+}
+
+input[type="text"] {
+    outline-color: rgba(86, 11, 64, 0.7);
 }
 
 #loginTopPadding
@@ -168,20 +176,6 @@ input[type="button"]:hover, input[type="submit"]:hover {
     padding-top: 10px;
 }
 
-/*.botonAceptar {
-    font-family: Arial;
-    font-size: 12pt;
-    color: #560B40;
-    background-color: white;
-    border: 1px solid #560B40;
-    font-weight: bold;
-}
-
-.botonAceptar:hover {
-    color: white;
-    background-color: rgba(86, 11, 64, 0.6);
-    border-color: rgba(86, 11, 64, 0.3);
-}*/
 
 #btnRegistrar {
     margin-top: 10px;
