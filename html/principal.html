@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Pagina Principal</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="../css/general.css">
+        <link rel="stylesheet" type="text/css" href="../css/principal.css">
+        <script src="../JS/jquery.js"></script>
+        <script src="../JS/scripts.js"></script>
+    </head>
+    <body>
+        <header>
+            <span>Logotipo</span>
+        </header>
+        <div id="wrapper">
+            <aside id="barraNavegacion">
+                <div>
+                    <img src="../Images/loginBackground.png" alt="no hype">
+                    <p class="text">Nombre de Usuario</p>
+                    <h4 class="text">@Nombre de la cuenta</h4>
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <td>
+                                <p class = "textoImprovisado">Notificaciones (0)</p>
+                                <ul id="notificacion">
+                                    <li><span>Ver mas...</span></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><p class = "textoImprovisado">Seguidores</p></td>
+                        </tr>
+                        <tr>
+                            <td><p class = "textoImprovisado">Seguidos</p></td>
+                        </tr>
+                        <tr>
+                            <td><p class = "textoImprovisado">Cerrar sesión</p></td>
+                        </tr>
+                    </table>
+                </div>
+            </aside>
+            <div id="contenido">
+                <!-- Usar flex para agrupar ingresar y busqueda dentro de un div -->
+                <div id="content-header">
+                    <div id="ingresar">
+                        <div>
+                            <div></div>
+                            <div>
+                                <input type="text" name="titulo" placeholder="Titulo de la publicacion" id="txt_titulo">
+                                <textarea rows="6" placeholder="Descripción"></textarea>
+                            </div>
+                        </div>
+                        <input type="file" name="loadImg">
+                        <input type="submit" name="btn_Publicar" value="Publicar" onclick="Post()">
+                    </div>
+                    <div id="busqueda">
+                        <input type="text" name="txt_Busqueda" placeholder="Buscar">
+                    </div>
+                </div>
+                <div id="publicaciones">
+                    <div id="columna0">
+                    </div>
+                    <div id="columna1">
+                    </div>
+                    <script>
+                        CreatePost("../Images/loginBackground1.jpg", "ASD", "QWE");
+                        CreatePost("../Images/loginBackground1.jpg", "holaaa", "adiosss");
+                        CreatePost("../Images/loginBackground1.jpg", "Este es un titulo exageradamente e innecesariamente largo", "Este comentario esta usando palabras exageradamente e innevesariamente largas");
+
+                        LoadComment("publicacion_0", "../Images/loginBackground1.jpg", "Yamil", "Se supone que ya funciona el salto de linea. ez life ez game. Hoy es 6 de octubre de 2016 y tiene que salir todo en un mes.", "QWE");
+                        LoadComment("publicacion_0", "../Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        LoadComment("publicacion_0", "../Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        LoadComment("publicacion_0", "../Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        LoadComment("publicacion_0", "../Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        LoadComment("publicacion_0", "../Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        LoadComment("publicacion_0", "../Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        LoadComment("publicacion_0", "../Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        LoadComment("publicacion_0", "../Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        LoadComment("publicacion_0", "../Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        LoadComment("publicacion_0", "../Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        LoadComment("publicacion_0", "../Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        
+                        LoadComment("publicacion_1", "../Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        LoadComment("publicacion_1", "../Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        LoadComment("publicacion_1", "../Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        LoadComment("publicacion_1", "../Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        LoadComment("publicacion_1", "../Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+
+                        LoadComment("publicacion_2", "../Images/loginBackground1.jpg", "Yamil", "Comentario de prueba que comprueba que ya se hace el salto de linea y se justifica el texto.", "asd");
+                        LoadComment("publicacion_2", "../Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        LoadComment("publicacion_2", "../Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        LoadComment("publicacion_2", "../Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        LoadComment("publicacion_2", "../Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        LoadComment("publicacion_2", "../Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        LoadComment("publicacion_2", "../Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        LoadComment("publicacion_2", "../Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        LoadComment("publicacion_2", "../Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        LoadComment("publicacion_2", "../Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        LoadComment("publicacion_2", "../Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");
+                        LoadComment("publicacion_2", "../Images/loginBackground1.jpg", "Yamil", "asdfasf", "asd");                    
+                    </script>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
